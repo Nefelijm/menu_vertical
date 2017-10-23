@@ -3,8 +3,8 @@ body {
 indicando el tipo de letra que
 va tener la web */
   font-family: sans-serif;
-
 }
+
 nav{
   /*outline: 1px solid red;*/
   width:200px;
@@ -12,7 +12,6 @@ nav{
 
 ul{
   /*outline: 1px solid red;*/
-
   list-style: none; /*quitando los estilos predefinidos */
   margin: 0px;
   padding:0px;
@@ -24,28 +23,29 @@ li {
    background: #f5f5f0;
 }
 
+
 /* estados de enlace: link , visited
 Hover active  LoVe/HAte*/
-
-
 a {
   display: block;
   text-decoration:none;
   color: #000;
   padding-left: : 10px;
   }
+
   /* la pseudoclase hover permite que al momento
   colocar el cursor cambue de color*/
   a:hover {
     background: #e0e0d1;
 
-    /*En el momento exacto que se activa
+  /*En el momento exacto que se activa
     o se hace clic cambia de color */
   }
   a:active{
     background: #333;
     color: #fff;
   }
+
   /* es una especificacion, queremos que cambie de color
   el fondo de la primera linea*/
   ul li:first-child {
@@ -57,12 +57,13 @@ a {
   ul li:first-child a {
     color: #fff;
   }
-/* cambiara de color la letra en el momento que pase el cursor
-solo de la primera linea*/
+
+  /* cambiara de color la letra en el momento que pase el cursor
+  solo de la primera linea*/
   ul li:first-child a:hover {
     color: #000;
   }
-/* cambiara de color la letra en el momento que se haga click*/
+  /* cambiara de color la letra en el momento que se haga click*/
   ul li:first-child a:active {
     color: #fff;
   }
