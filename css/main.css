@@ -12,7 +12,8 @@ nav{
 
 ul{
   /*outline: 1px solid red;*/
-  list-style: none;
+
+  list-style: none; /*quitando los estilos predefinidos */
   margin: 0px;
   padding:0px;
   line-height: 30px;
@@ -33,27 +34,35 @@ a {
   color: #000;
   padding-left: : 10px;
   }
-
+  /* la pseudoclase hover permite que al momento
+  colocar el cursor cambue de color*/
   a:hover {
     background: #e0e0d1;
+
+    /*En el momento exacto que se activa
+    o se hace clic cambia de color */
   }
   a:active{
     background: #333;
     color: #fff;
   }
-
+  /* es una especificacion, queremos que cambie de color
+  el fondo de la primera linea*/
   ul li:first-child {
     background: #f9a91a;
   }
 
+  /* cambiara de color el contenido del elemento a solo
+  la primera linea */
   ul li:first-child a {
     color: #fff;
   }
-
+/* cambiara de color la letra en el momento que pase el cursor
+solo de la primera linea*/
   ul li:first-child a:hover {
     color: #000;
   }
-
+/* cambiara de color la letra en el momento que se haga click*/
   ul li:first-child a:active {
     color: #fff;
   }
